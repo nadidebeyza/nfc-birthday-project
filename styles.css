@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://nadidebeyza.github.io/nfc-birthday-project/assets/landing.jpeg');
+    background-image: url('assets/landing.jpeg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
