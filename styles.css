@@ -648,7 +648,7 @@ body {
 .promise-card::before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: -260px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -679,7 +679,7 @@ body {
 
 .promise-card h3 {
     font-family: 'Great Vibes', cursive;
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: clamp(2.3rem, 6vw, 3.5rem);
     font-weight: 400;
     color: #000;
     position: relative;
@@ -699,7 +699,7 @@ body {
 
 .promise-signature {
     margin-top: 60px;
-    padding-top: 40px;
+    padding-top: 80px;
     position: relative;
     z-index: 2;
 }
