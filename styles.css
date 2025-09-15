@@ -538,7 +538,7 @@ body {
 .timeline-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -553,7 +553,7 @@ body {
     transition: transform 0.3s ease;
     position: relative;
     padding: 50px;
-    margin: 20px;
+    margin: 10px;
     opacity: 1;
 }
 
@@ -653,7 +653,7 @@ body {
 .promise-card::before {
     content: '';
     position: absolute;
-    top: -200px;
+    top: -50px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -878,6 +878,16 @@ body {
     .promise-signature {
         margin-top: 40px;
         padding-top: 50px;
+    }
+    
+    .timeline-gallery {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    
+    .milestone-card {
+        margin: 5px;
+        padding: 30px;
     }
 }
 
