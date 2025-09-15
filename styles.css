@@ -300,7 +300,7 @@ body {
 .cake-icon {
     width: 40%;
     height: auto;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 
@@ -554,6 +554,7 @@ body {
     position: relative;
     padding: 50px;
     margin: 20px;
+    opacity: 1;
 }
 
 .milestone-card::before {
@@ -569,6 +570,7 @@ body {
     background-position: center;
     z-index: 1;
     pointer-events: none;
+    opacity: 1;
 }
 
 .milestone-card:hover {
