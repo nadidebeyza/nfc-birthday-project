@@ -850,6 +850,49 @@ body {
     }
 }
 
+/* Very Small Mobile Devices (320px - 390px) - iPhone SE, etc. */
+@media (max-width: 390px) {
+    .promise-card h3 {
+        font-size: clamp(1.2rem, 8vw, 2rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        line-height: 1.6;
+    }
+    
+    .signature {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+    
+    .promise-card {
+        padding: 25px 20px;
+    }
+    
+    .promise-signature {
+        margin-top: 40px;
+        padding-top: 50px;
+    }
+}
+
+/* Small Mobile Devices (391px - 480px) */
+@media (min-width: 391px) and (max-width: 480px) {
+    .promise-card h3 {
+        font-size: clamp(1.4rem, 7vw, 2.2rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1rem, 4.5vw, 1.2rem);
+        line-height: 1.6;
+    }
+    
+    .signature {
+        font-size: clamp(1.7rem, 6.5vw, 2.2rem);
+    }
+}
+
 /* Small Devices (landscape phones, 576px and up) */
 @media (min-width: 481px) and (max-width: 767px) {
     .memories-gallery {
@@ -865,6 +908,20 @@ body {
     .wall-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+    
+    .promise-card h3 {
+        font-size: clamp(1.6rem, 6.5vw, 2.5rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1.1rem, 3.5vw, 1.25rem);
+        line-height: 1.7;
+    }
+    
+    .signature {
+        font-size: clamp(1.8rem, 5.5vw, 2.3rem);
     }
 }
 
@@ -890,6 +947,20 @@ body {
     .opening-card,
     .promise-card {
         padding: 50px 40px;
+    }
+    
+    .promise-card h3 {
+        font-size: clamp(1.8rem, 6vw, 2.8rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1.2rem, 3.2vw, 1.3rem);
+        line-height: 1.7;
+    }
+    
+    .signature {
+        font-size: clamp(2rem, 5vw, 2.4rem);
     }
 }
 
@@ -921,6 +992,20 @@ body {
     .memory-item {
         padding: 40px 30px;
     }
+    
+    .promise-card h3 {
+        font-size: clamp(2rem, 5.5vw, 3.2rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1.2rem, 3vw, 1.3rem);
+        line-height: 1.7;
+    }
+    
+    .signature {
+        font-size: clamp(2.1rem, 4.5vw, 2.5rem);
+    }
 }
 
 /* Extra Large Devices (large desktops, 1200px and up) */
@@ -932,6 +1017,20 @@ body {
     
     .wall-grid {
         grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .promise-card h3 {
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1.3rem, 2.8vw, 1.3rem);
+        line-height: 1.7;
+    }
+    
+    .signature {
+        font-size: clamp(2.2rem, 4vw, 2.5rem);
     }
 }
 
@@ -966,6 +1065,25 @@ body {
     .section-title {
         font-size: clamp(2.5rem, 8vh, 3.5rem);
         margin-bottom: 30px;
+    }
+    
+    .promise-card h3 {
+        font-size: clamp(1.4rem, 4vh, 2.2rem);
+        line-height: 1.3;
+    }
+    
+    .promise-card p {
+        font-size: clamp(1rem, 2.5vh, 1.2rem);
+        line-height: 1.6;
+    }
+    
+    .signature {
+        font-size: clamp(1.6rem, 3.5vh, 2rem);
+    }
+    
+    .promise-signature {
+        margin-top: 30px;
+        padding-top: 40px;
     }
 }
 
