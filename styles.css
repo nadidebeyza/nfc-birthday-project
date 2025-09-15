@@ -564,12 +564,11 @@ body {
     right: -20px;
     bottom: -20px;
     background-image: url('/nfc-birthday-project/assets/border-portrait-1.png');
-    background-size: 100% 100%;
+    background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
     pointer-events: none;
-    opacity: 0.8;
 }
 
 .milestone-card:hover {
