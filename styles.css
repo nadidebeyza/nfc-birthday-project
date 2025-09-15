@@ -565,7 +565,7 @@ body {
     right: -20px;
     bottom: -20px;
     background-image: url('/nfc-birthday-project/assets/border-portrait-1.png');
-    background-size: 80% 80%;
+    background-size: 75% 90%;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
@@ -872,7 +872,7 @@ body {
     }
     
     .promise-card {
-        padding: 25px 20px;
+        padding: 25px 55px;
     }
     
     .promise-signature {
