@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/landing.jpeg');
+    background-image: url('./assets/landing.jpeg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
     transform: translateX(-50%);
     width: 250px;
     height: 40px;
-    background-image: url('assets/motif-divider-2.png');
+    background-image: url('./assets/motif-divider-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -562,7 +562,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/border-portrait-1.png');
+    background-image: url('./assets/border-portrait-1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -652,7 +652,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/border-portrait-2.png');
+    background-image: url('./assets/border-portrait-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
