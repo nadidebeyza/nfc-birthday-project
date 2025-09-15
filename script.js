@@ -63,37 +63,42 @@ function goBackToLanding() {
     }, 400);
 }
 
-// Add touch gesture support for mobile
+// Add touch gesture support for mobile (disabled to prevent accidental page refresh)
 let touchStartY = 0;
 let touchEndY = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 document.addEventListener('touchstart', function(event) {
     touchStartY = event.changedTouches[0].screenY;
+    touchStartX = event.changedTouches[0].screenX;
 });
 
 document.addEventListener('touchend', function(event) {
     touchEndY = event.changedTouches[0].screenY;
+    touchEndX = event.changedTouches[0].screenX;
     handleSwipe();
 });
 
 function handleSwipe() {
-    const swipeThreshold = 50;
-    const swipeDistance = touchStartY - touchEndY;
+    const swipeThreshold = 100; // Increased threshold to prevent accidental triggers
+    const swipeDistanceY = touchStartY - touchEndY;
+    const swipeDistanceX = touchStartX - touchEndX;
     
-    // Swipe up to go to main page (from landing page)
-    if (swipeDistance > swipeThreshold) {
-        const landingPage = document.getElementById('landing-page');
-        if (landingPage.classList.contains('active')) {
-            openMainPage();
-        }
+    // Only trigger swipe if it's a clear vertical swipe (not horizontal scrolling)
+    if (Math.abs(swipeDistanceX) > Math.abs(swipeDistanceY)) {
+        return; // Ignore horizontal swipes
     }
     
-    // Swipe down to go back to landing page (from main page)
-    if (swipeDistance < -swipeThreshold) {
-        const mainPage = document.getElementById('main-page');
-        if (mainPage.classList.contains('active')) {
-            goBackToLanding();
-        }
+    // Only allow swipes on the landing page to prevent accidental navigation
+    const landingPage = document.getElementById('landing-page');
+    if (!landingPage.classList.contains('active')) {
+        return; // Disable swipe gestures on main page to prevent refresh
+    }
+    
+    // Swipe up to go to main page (only from landing page)
+    if (swipeDistanceY > swipeThreshold) {
+        openMainPage();
     }
 }
 
