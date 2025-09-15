@@ -184,13 +184,7 @@ function initializeMemoryGallery() {
     const frameWidth = 220; // 200px width + 20px gap
     const visibleFrames = Math.floor(window.innerWidth / frameWidth);
     
-    // Show memory caption on click
-    photoFrames.forEach(frame => {
-        frame.addEventListener('click', function() {
-            const caption = this.getAttribute('data-caption');
-            showMemoryModal(caption);
-        });
-    });
+    // Memory frames are no longer clickable - removed click functionality
     
     // Gallery navigation
     if (prevBtn && nextBtn) {
