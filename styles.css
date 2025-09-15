@@ -558,16 +558,17 @@ body {
 .milestone-card::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
     background-image: url('/nfc-birthday-project/assets/border-portrait-1.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
     pointer-events: none;
+    opacity: 0.8;
 }
 
 .milestone-card:hover {
@@ -575,13 +576,14 @@ body {
 }
 
 .milestone-image {
-    width: 80%;
-    height: 200px;
+    width: 85%;
+    height: 220px;
     overflow: hidden;
     position: relative;
     z-index: 2;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .milestone-photo {
@@ -589,6 +591,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 .milestone-card:hover .milestone-photo {
